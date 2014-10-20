@@ -11,7 +11,7 @@ public class Solution{
 		
 		Random a = new Random(); 
 	
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<Integer> list = new ArrayList<Integer>(); //Коллекция
 	
 		for (int i = 0; i < 5; i++) {
 		

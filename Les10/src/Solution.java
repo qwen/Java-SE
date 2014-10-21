@@ -1,9 +1,6 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
-
-
 
 
 public class Solution{
@@ -15,13 +12,10 @@ public class Solution{
 	
 		ArrayList<Integer> list = new ArrayList<Integer>(); //Коллекция
 	
-		for (int i = 0; i < 5; i++) {
-		
-			list.add(a.nextInt(10));	//Заполняем случйными числами (0-10)	
-		
+		for (int i = 0; i < 5; i++) {		
+			list.add(a.nextInt(10));	//Заполняем случйными числами (0-10)			
 		}
-	
-	
+		
 		for (Integer w : list) {
 			System.out.println(w);		
 		}
@@ -30,9 +24,9 @@ public class Solution{
 		System.out.println("Максимальный элемент массива " + Collections.max(list));
 		System.out.println("Минимальный элемент массива " + Collections.min(list));
 
-		list.set(2, 9);
+		list.set(2, 99);		//Заменяем второый элемент массива на 99
 	
-		System.out.println(list.get(1));
+		System.out.println("Нулевой элемент массива " + list.get(0));
 	
 		for (Integer w : list) {
 			System.out.println(w);		
@@ -40,5 +34,4 @@ public class Solution{
 	
 	
 	}
-
 }	
